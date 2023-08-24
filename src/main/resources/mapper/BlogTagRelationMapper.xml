@@ -7,6 +7,7 @@
         <result column="tag_id" jdbcType="INTEGER" property="tagId"/>
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
     </resultMap>
+
     <sql id="Base_Column_List">
     relation_id, blog_id, tag_id, create_time
   </sql>
