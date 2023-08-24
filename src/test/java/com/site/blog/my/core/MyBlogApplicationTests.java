@@ -16,13 +16,5 @@ public class MyBlogApplicationTests {
 	}
 
 
-		public static void main(String[] args) {
-			String ss = DemoUtils.print("123");
-			System.out.println(ss);
-			String map = MoMapUtil.map("123455");
-			System.out.println(map);
-			final HashMap ddd = MoMapUtil.map2("ddd");
-			ddd.forEach((key, value) -> System.out.println(key + " -> " + value));
 
-		}
 }
