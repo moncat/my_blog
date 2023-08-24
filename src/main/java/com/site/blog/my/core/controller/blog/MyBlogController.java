@@ -52,6 +52,12 @@ public class MyBlogController {
     }
 
 
+    @GetMapping({"/googlef65e5226378a6d2f.html"})
+    public String google(HttpServletRequest request) {
+        return "blog/" + theme + "/googlef65e5226378a6d2f";
+    }
+
+
     @GetMapping({"/test" })
     @ResponseBody
     public String test(HttpServletRequest request) {
