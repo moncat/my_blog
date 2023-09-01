@@ -224,3 +224,10 @@ $('#randomCoverImage').click(function () {
     $("#blogCoverImage").attr("src", '/admin/dist/img/rand/' + rand + ".jpg");
     $("#blogCoverImage").attr("style", "width:160px ;height: 120px;display:block;");
 });
+
+
+$('#selectImage').click(function () {
+    var imageId  = $('#imageId').val();
+    $("#blogCoverImage").attr("src", '/admin/dist/img/rand/' + imageId + ".jpg");
+    $("#blogCoverImage").attr("style", "width:160px ;height: 120px;display:block;");
+});
