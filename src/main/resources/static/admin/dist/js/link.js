@@ -8,7 +8,7 @@ $(function () {
             {label: '网站链接', name: 'linkUrl', index: 'linkUrl', width: 120},
             {label: '网站描述', name: 'linkDescription', index: 'linkDescription', width: 120},
             {label: '排序值', name: 'linkRank', index: 'linkRank', width: 30},
-            {label: '链接类型', name: 'linkType', index: 'linkType', width: 100,formatter:linkTypeFormatter},
+            {label: '链接类型', name: 'linkType', index: 'linkType', width: 50,formatter:linkTypeFormatter},
             {label: '添加时间', name: 'createTime', index: 'createTime', width: 100}
         ],
         height: 560,
