@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title th:text="${configurations.get('websiteName')}+' | '+${pageName}">详情页</title>
+    <title th:text="${configurations.get('websiteName')}+' | '+${pageName}+' | '+${blogDetailVO.blogTitle}">详情页</title>
     <meta name="description" th:content="${configurations.get('websiteDescription')}">
     <meta name="viewport" content="width=device-width">
     <meta name="baidu-site-verification" content="codeva-6bTRtQ7BNN" />
@@ -56,7 +56,7 @@
                                 <th:block th:text="${blogDetailVO.blogViews}"></th:block>浏览
                             </div>
                             </span>
-                    <div class="tags post-tags">
+                    <div  name="tags" class="tags post-tags">
                         <th:block th:each="tag : ${blogDetailVO.blogTags}">
                             <a class="tag" rel="tag" th:href="@{'/tag/' + ${tag}}">
                                 <th:block th:text="${tag}"></th:block>
